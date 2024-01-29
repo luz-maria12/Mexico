@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../XAMPP/htdocs/php-geoip-api"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "GeoIP.location"
+	}
+}
