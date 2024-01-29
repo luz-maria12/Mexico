@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Información de la IP del Cliente</title>
-  <!-- Enlace a los estilos de Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -30,27 +29,8 @@
 <div class="container">
   <h1 class="text-center">Información de la IP del Cliente</h1>
 
-  <!-- Formulario para ingresar datos -->
-  <form id="ipDataForm" class="mb-4">
-    <div class="row">
-      <div class="col">
-        <input type="text" class="form-control" placeholder="IP" id="inputIp">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="País" id="inputPais">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Continente" id="inputContinente">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Zona Horaria" id="inputZonaHoraria">
-      </div>
-      <div class="col">
-        <button type="submit" class="btn btn-primary">Agregar</button>
-      </div>
-    </div>
-  </form>
-
+  <!-- Información de la API 1 -->
+  <h2>Información de API 1</h2>
   <table class="table table-striped mt-4">
     <thead>
       <tr>
@@ -67,12 +47,48 @@
         <td id="continente"></td>
         <td id="zona_horaria"></td>
       </tr>
-      <!-- Agrega más filas de datos de muestra según sea necesario -->
+    </tbody>
+  </table>
+
+  <!-- Información de la API 2 -->
+  <h2>Información de API 2</h2>
+  <table class="table table-striped mt-4">
+    <thead>
+      <tr>
+        <th>IP</th>
+        <th>País</th>
+        <th>Continente</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="ip2"></td>
+        <td id="pais2"></td>
+        <td id="continente2"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Información de la API 3 -->
+  <h2>Información de API 3</h2>
+  <table class="table table-striped mt-4">
+    <thead>
+      <tr>
+        <th>IP</th>
+        <th>País</th>
+        <th>Zona Horaria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="ip3"></td>
+        <td id="pais3"></td>
+        <td id="zona_horaria3"></td>
+      </tr>
     </tbody>
   </table>
 </div>
 
-<!-- Enlaces a los scripts de Bootstrap y jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
